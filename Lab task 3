@@ -1,0 +1,23 @@
+include <stdio.h>
+
+int main() {
+    float totalAttempts, successfulCount, failedCount;
+    float failedPercentage, successfulPercentage;
+
+    printf("Enter Total Login Attempts: ");
+    scanf("%f", &totalAttempts);
+
+    printf("Enter Successful Logins: ");
+    scanf("%f", &successfulCount);
+
+    printf("Enter Failed Logins: ");
+    scanf("%f", &failedCount);
+
+    failedPercentage = (failedCount / totalAttempts) * 100;
+    successfulPercentage = (successfulCount / totalAttempts) * 100;
+
+    printf("\nFailed Login Percentage: %.2f%%\n", failedPercentage);
+    printf("Successful Login Percentage: %.2f%%\n", successfulPercentage);
+
+    return 0;
+}
