@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(){
+int number_of_cables,price;
+printf("Enter number of cables: ");
+scanf("%d",&number_of_cables);
+printf("\nEnter price of one cable: ");
+scanf("%d",&price);
+int total_cost=number_of_cables*price;
+printf("\n%d",total_cost);
+
+
+    return 0;
+
+}
